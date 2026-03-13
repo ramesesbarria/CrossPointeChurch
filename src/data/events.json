@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Women's Bible Study",
+    "date": "2026-03-15",
+    "displayDate": "Sunday, March 15, 2026",
+    "time": "1:00 PM",
+    "location": "One Central Hotel, 7th Floor",
+    "description": "Join our Women's Life Group for Bible study, fellowship, and encouragement. All women are welcome!",
+    "image": "",
+    "category": "Life Groups"
+  },
+  {
+    "id": 2,
+    "title": "Men's Bible Study",
+    "date": "2026-03-15",
+    "displayDate": "Sunday, March 15, 2026",
+    "time": "1:00 PM",
+    "location": "One Central Hotel, 7th Floor Conference Room",
+    "description": "Men's Life Group gathering for Bible study and brotherhood. Come grow together in faith!",
+    "image": "",
+    "category": "Life Groups"
+  },
+  {
+    "id": 3,
+    "title": "Young Adults Bible Study",
+    "date": "2026-03-15",
+    "displayDate": "Sunday, March 15, 2026",
+    "time": "1:00 PM",
+    "location": "One Central Hotel, 7th Floor",
+    "description": "Young Adults Life Group gathering for Bible study, worship, and community. All young adults welcome!",
+    "image": "",
+    "category": "Life Groups"
+  },
+  {
+    "id": 4,
+    "title": "Family Camp",
+    "date": "2026-04-24",
+    "displayDate": "Friday, April 24, 2026",
+    "time": "TBA",
+    "location": "The Fog House",
+    "description": "A special family camp retreat for the CrossPointe Church family. More details to be announced soon. Watch this space!",
+    "image": "",
+    "category": "Camp"
+  },
+  {
+    "id": 5,
+    "title": "Donation Drive",
+    "date": "2026-05-02",
+    "displayDate": "Saturday, May 2, 2026",
+    "time": "8:00 AM",
+    "location": "LUDO, Cebu City",
+    "description": "Join us as we give back to the community through our donation drive. Bring donations and a willing heart to serve!",
+    "image": "",
+    "category": "Outreach"
+  },
+  {
+    "id": 6,
+    "title": "Cancer Ministry",
+    "date": "2026-05-02",
+    "displayDate": "Saturday, May 2, 2026",
+    "time": "TBA",
+    "location": "Vicente Sotto Memorial Medical Center, Cebu City",
+    "description": "Ministering to cancer patients and their families at Vicente Sotto Memorial Medical Center. Come and be a blessing to those who need it most.",
+    "image": "",
+    "category": "Ministry"
+  },
+  {
+    "id": 7,
+    "title": "KiddiePointe",
+    "date": "2026-03-15",
+    "displayDate": "Sunday, March 15, 2026",
+    "time": "10:00 AM",
+    "location": "One Central Hotel, 7th Floor",
+    "description": "A fun and faith-filled gathering for the kids of CrossPointe! Games, worship, and Bible stories designed just for children.",
+    "image": "",
+    "category": "Children"
+  }
+
+]

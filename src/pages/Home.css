@@ -228,3 +228,88 @@
   color: var(--color-text-muted);
   font-style: italic;
 }
+
+/* ── Preview Row (Service + Events side by side) ── */
+.preview-row {
+  background-color: var(--color-primary-light);
+  padding: 5rem 2rem;
+}
+
+.preview-row__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.preview-col h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Events Preview Cards ── */
+.events-preview__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.events-preview__card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--color-primary);
+}
+
+.events-preview__category {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.events-preview__card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.events-preview__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.events-preview__empty {
+  background: white;
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text-muted);
+  box-shadow: var(--shadow-sm);
+}
+
+.events-preview__empty p:first-child {
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: 0.25rem;
+}
+
+/* ── Mobile: stack columns ── */
+@media (max-width: 768px) {
+  .preview-row__inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
