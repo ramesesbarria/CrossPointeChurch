@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Schedule Change",
+    "message": "This Sunday, March 15 service will begin at 10:00 AM sharp. Please arrive early!",
+    "type": "warning",
+    "active": true
+  },
+  {
+    "id": 2,
+    "title": "Parking Update",
+    "message": "Please arrive early as parking is limited.",
+    "type": "info",
+    "active": true
+  }
+]

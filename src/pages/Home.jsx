@@ -3,6 +3,7 @@ import { useMemo } from 'react'
 import './Home.css'
 import servicesData from '../data/services.json'
 import eventsData from '../data/events.json'
+import announcementsData from '../data/announcements.json'
 
 function Home() {
   const today = new Date()
@@ -18,6 +19,8 @@ function Home() {
       .slice(0, 2)
   }, [])
 
+  const activeAnnouncements = announcementsData.filter(a => a.active)
+
   return (
     <div className="home">
 
@@ -25,16 +28,32 @@ function Home() {
       <section className="hero">
         <div className="hero__overlay" />
         <div className="hero__content">
-          <p className="hero__eyebrow">Welcome to CrossPointe Church</p>
-          <h1 className="hero__title">
-            Seek <span>God</span><br />
-            Share <span>Life</span><br />
-            Serve <span>Others</span>
-          </h1>
-          <div className="hero__actions">
-            <Link to="/connect" className="btn btn--primary">Plan Your Visit</Link>
-            <Link to="/services" className="btn btn--outline">Our Services</Link>
+
+          <div className="hero__main">
+            <p className="hero__eyebrow">Welcome to CrossPointe Church</p>
+            <h1 className="hero__title">
+              Seek <span>God</span><br />
+              Share <span>Life</span><br />
+              Serve <span>Others</span>
+            </h1>
+            <div className="hero__actions">
+              <Link to="/connect" className="btn btn--primary">Plan Your Visit</Link>
+              <Link to="/services" className="btn btn--outline">Our Services</Link>
+            </div>
           </div>
+
+          {activeAnnouncements.length > 0 && (
+            <div className="hero__announcements">
+              <p className="hero__announcements-label">📢 Announcements</p>
+              {activeAnnouncements.map((a) => (
+                <div className={`announcement__card announcement__card--${a.type}`} key={a.id}>
+                  <p className="announcement__title">{a.title}</p>
+                  <p className="announcement__message">{a.message}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
         </div>
       </section>
 
@@ -53,11 +72,10 @@ function Home() {
         </div>
       </section>
 
-      {/* Schedule + Events side by side */}
+      {/* Next Service + Events */}
       <section className="preview-row">
         <div className="preview-row__inner">
 
-          {/* Next Service */}
           <div className="preview-col">
             <p className="section__eyebrow">Join Us</p>
             <h2>Next Service</h2>
@@ -90,10 +108,9 @@ function Home() {
             )}
           </div>
 
-          {/* Upcoming Events */}
           <div className="preview-col">
             <p className="section__eyebrow">What's On</p>
-            <h2>Upcoming Events, Life Groups, and Ministries</h2>
+            <h2>Upcoming Events</h2>
             {upcomingEvents.length > 0 ? (
               <div className="events-preview__list">
                 {upcomingEvents.map((event) => (
