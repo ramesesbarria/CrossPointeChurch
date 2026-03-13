@@ -1,0 +1,12 @@
+.footer {
+  background-color: var(--color-navy);
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+.footer p {
+  letter-spacing: 0.02em;
+}
