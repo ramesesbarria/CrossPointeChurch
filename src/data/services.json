@@ -1,9 +1,57 @@
 [
   {
     "id": 1,
-    "name": "Morning Worship",
+    "date": "2026-03-01",
+    "day": "Sunday, March 1",
     "time": "10:00 AM",
-    "location": "One Central Hotel - 7th Floor | Sanciangko St, Cebu City, Cebu",
-    "day": "Sunday"
+    "location": "One Central Hotel, 7th Floor",
+    "address": "Sanciangko Street, Cebu City",
+    "type": "Sunday Service",
+    "pastor": "Nicolo Allen Padilla",
+    "notes": ""
+  },
+  {
+    "id": 2,
+    "date": "2026-03-08",
+    "day": "Sunday, March 8",
+    "time": "10:00 AM",
+    "location": "One Central Hotel, 7th Floor",
+    "address": "Sanciangko Street, Cebu City",
+    "type": "Sunday Service",
+    "pastor": "Nicolo Allen Padilla",
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "date": "2026-03-15",
+    "day": "Sunday, March 15",
+    "time": "10:00 AM",
+    "location": "One Central Hotel, 7th Floor",
+    "address": "Sanciangko Street, Cebu City",
+    "type": "Sunday Service",
+    "pastor": "Nicolo Allen Padilla",
+    "notes": ""
+  },
+  {
+    "id": 4,
+    "date": "2026-03-22",
+    "day": "Sunday, March 22",
+    "time": "10:00 AM",
+    "location": "One Central Hotel, 7th Floor",
+    "address": "Sanciangko Street, Cebu City",
+    "type": "Sunday Service",
+    "pastor": "Nicolo Allen Padilla",
+    "notes": ""
+  },
+  {
+    "id": 5,
+    "date": "2026-03-29",
+    "day": "Sunday, March 29",
+    "time": "10:00 AM",
+    "location": "One Central Hotel, 7th Floor",
+    "address": "Sanciangko Street, Cebu City",
+    "type": "Sunday Service",
+    "pastor": "Nicolo Allen Padilla",
+    "notes": ""
   }
 ]
