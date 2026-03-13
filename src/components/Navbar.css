@@ -5,11 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0.85rem 2rem;
   background-color: var(--color-navy);
   box-shadow: var(--shadow-md);
 }
 
+/* ── Logo ── */
 .navbar__logo {
   display: flex;
   align-items: center;
@@ -29,6 +31,7 @@
   letter-spacing: 0.01em;
 }
 
+/* ── Desktop Links ── */
 .navbar__links {
   display: flex;
   gap: 0.25rem;
@@ -52,4 +55,84 @@
 .navbar__links a.active {
   color: var(--color-white);
   background-color: var(--color-primary);
+}
+
+/* ── Hamburger Button ── */
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate bars into X when open */
+.navbar__hamburger .bar:nth-child(1).bar--open {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar__hamburger .bar:nth-child(2).bar--open {
+  opacity: 0;
+}
+.navbar__hamburger .bar:nth-child(3).bar--open {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile Dropdown ── */
+.navbar__mobile {
+  display: none;
+  width: 100%;
+  list-style: none;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.navbar__mobile--open {
+  max-height: 400px;
+}
+
+.navbar__mobile li {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar__mobile a {
+  display: block;
+  padding: 0.85rem 0.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar__mobile a:hover,
+.navbar__mobile a.active {
+  color: var(--color-white);
+}
+
+/* ── Responsive Breakpoint ── */
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  .navbar__mobile {
+    display: flex;
+  }
 }
