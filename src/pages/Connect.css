@@ -1,0 +1,118 @@
+.connect__header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-navy) 100%);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+}
+
+.connect__header .section__eyebrow {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.connect__header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.connect__header p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Body Layout ── */
+.connect__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ── Info Blocks ── */
+.connect__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.connect__block h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.connect__block p {
+  color: var(--color-text-muted);
+  font-size: 0.975rem;
+  line-height: 1.6;
+}
+
+.connect__block a {
+  color: var(--color-primary);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.connect__block a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* ── Social Buttons ── */
+.connect__socials {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.connect__social-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.connect__social-btn:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* ── Map ── */
+.connect__map {
+  border-radius: var(--radius);
+  overflow: hidden;
+  height: 450px;
+  box-shadow: var(--shadow-md);
+}
+
+.connect__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .connect__body {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .connect__map {
+    height: 300px;
+  }
+}
