@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Pastor Nicolo Allen Padilla",
+    "role": "Lead Pastor",
+    "bio": "Crosspointes Pastor.",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Res Ruentes",
+    "role": "Worship Team Leader",
+    "bio": "Res leads the Church in worship.",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "Shiela Von Ilao-Dalay",
+    "role": "Church Staff",
+    "bio": "Shiela is the head of the Church staff.",
+    "image": ""
+  }
+]

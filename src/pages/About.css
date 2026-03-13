@@ -1,0 +1,192 @@
+/* ── Header ── */
+.about__header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-navy) 100%);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+}
+
+.about__header .section__eyebrow {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about__header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about__header p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ── Mission & Vision ── */
+.about__mv {
+  background-color: var(--color-primary-light);
+  padding: 5rem 2rem;
+}
+
+.about__mv-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.about__mv-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 2rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.about__mv-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.about__mv-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about__mv-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.about__mv-card p {
+  font-size: 0.925rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+/* ── History ── */
+.about__history {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.about__history-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about__history-inner h2 {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+}
+
+.about__history-inner p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Staff ── */
+.about__staff {
+  background-color: var(--color-bg);
+  padding: 5rem 2rem;
+}
+
+.about__staff-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__staff-inner h2 {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 3rem;
+}
+
+.staff__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.staff__card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease;
+}
+
+.staff__card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.staff__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.25rem;
+}
+
+.staff__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.staff__avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-navy));
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff__card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.25rem;
+}
+
+.staff__role {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.staff__bio {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .about__mv-inner,
+  .staff__grid {
+    grid-template-columns: 1fr;
+  }
+}

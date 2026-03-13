@@ -1,0 +1,163 @@
+/* ── Header ── */
+.giving__header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-navy) 100%);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+}
+
+.giving__header .section__eyebrow {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.giving__header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.giving__header p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ── Scripture ── */
+.giving__verse {
+  background-color: var(--color-navy);
+  padding: 4rem 2rem;
+}
+
+.giving__verse-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.giving__verse blockquote {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.85;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.giving__verse cite {
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+/* ── Methods ── */
+.giving__methods {
+  padding: 5rem 2rem;
+  background-color: var(--color-bg);
+}
+
+.giving__methods-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.giving__methods-inner h2 {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 2.5rem;
+}
+
+.giving__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── Giving Card ── */
+.giving__card {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.giving__card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.giving__card-header {
+  background: linear-gradient(135deg, var(--color-primary-light), white);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.giving__icon {
+  font-size: 1.75rem;
+}
+
+.giving__card-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.giving__card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.giving__detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.giving__detail:last-of-type {
+  border-bottom: none;
+}
+
+.giving__label {
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.giving__value {
+  color: var(--color-navy);
+  font-weight: 600;
+}
+
+.giving__instruction {
+  font-size: 0.845rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-border);
+  font-style: italic;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .giving__grid {
+    grid-template-columns: 1fr;
+  }
+}
